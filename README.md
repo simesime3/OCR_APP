@@ -1,1 +1,3 @@
-# OCR_APP
+# OCR_APP testing
+
+OCR with streamlit
