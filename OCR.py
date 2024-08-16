@@ -1,3 +1,5 @@
+pip install pyocr
+
 import streamlit as st # フロントエンドを扱うstreamlitの機能をインポート
 from PIL import Image # 画像扱うための機能をインポート
 import pyocr # 外部OCRを扱うための機能をインポート
