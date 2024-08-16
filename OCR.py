@@ -7,8 +7,11 @@ import platform # OSの判別するために、プラットフォームを読み
 # ※講義のためにmacでもwindowsでも動くように指定しています。
 if platform.system() == "Windows":
     pyocr.tesseract.TESSERACT_CMD = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-else:
+elif platform.system() == "Darwin":
     pyocr.tesseract.TESSERACT_CMD = r"/opt/homebrew/bin/tesseract"
+else:
+    pyocr.tesseract.TESSERACT_CMD = r"/usr/local/bin/tesseract"
+
 
 
 # 画像読み込みのための言語と言語のコードを変換するリストを設定
